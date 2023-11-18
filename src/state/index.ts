@@ -11,17 +11,17 @@ import storage from './storage'
 import { getCookie } from '@/lib/utils'
 
 export const GreetMessages = [
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space',
-  'This is your OpenAI Reverse Proxy URL: https://ngoctuanai-gpt4-api.hf.space'
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/',
+  'This is your OpenAI Reverse Proxy URL: https://niansuh-gpt4api.hf.space/'
 ]
 
 export const PrompsTemplates = [
