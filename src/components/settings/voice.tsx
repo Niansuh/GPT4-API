@@ -14,14 +14,14 @@ export function VoiceSetting() {
   return (
     <>
       <DialogHeader>
-        <DialogTitle>Voice settings</DialogTitle>
+        <DialogTitle>语音设置</DialogTitle>
         <DialogDescription>
-          Currently only supports PC Edge and Chrome browsers
+          目前仅支持 PC 端 Edge 及 Chrome 浏览器
         </DialogDescription>
       </DialogHeader>
 
       <div className="flex gap-2">
-        Enable voice answers
+        启用语音回答
         <Switch
           checked={enableTTS}
           className={`${enableTTS ? 'bg-blue-600' : 'bg-gray-200'} relative inline-flex h-6 w-11 items-center rounded-full`}
