@@ -65,7 +65,7 @@ export function ChatImage({ children, uploadImage }: React.PropsWithChildren<Cha
       if (/^https?:\/\/.+/.test(inputUrl)) {
         upload(inputUrl)
       } else {
-        toast.error('请输入有效的图片链接')
+        toast.error('Please enter a valid image link')
       }
     }
   }, [])
@@ -123,7 +123,7 @@ export function ChatImage({ children, uploadImage }: React.PropsWithChildren<Cha
       <div className={cn('visual-search', panel)} onClick={preventDefault}>
         <div className="normal-content">
           <div className="header">
-            <h4>添加图像</h4>
+            <h4>Add Image</h4>
           </div>
           <div className="paste">
             <SVG alt="paste" src={PasteIcon} width={24} />
@@ -133,15 +133,15 @@ export function ChatImage({ children, uploadImage }: React.PropsWithChildren<Cha
                 id="sb_imgpst"
                 type="text"
                 name="image"
-                placeholder="粘贴图像 URL"
-                aria-label="粘贴图像 URL"
+                placeholder="Paste image URL"
+                aria-label="Paste image URL"
                 onPaste={onPaste}
                 onClickCapture={(e) => e.stopPropagation()}
               />
             </form>
           </div>
           <div className="buttons">
-            <button type="button" aria-label="从此设备上传">
+            <button type="button" aria-label="Upload from this device">
               <input
                 ref={fileRef}
                 className="fileinput"
@@ -150,11 +150,11 @@ export function ChatImage({ children, uploadImage }: React.PropsWithChildren<Cha
                 onChange={onUpload}
               />
               <SVG alt="uplaod" src={UploadIcon} width={20} />
-              从此设备上传
+              Upload from this device
             </button>
-            <button type="button" aria-label="拍照" onClick={openVideo}>
+            <button type="button" aria-label="Photograph" onClick={openVideo}>
               <SVG alt="camera" src={CameraIcon} width={20} />
-              拍照
+              Photograph
             </button>
           </div>
         </div>
@@ -163,7 +163,7 @@ export function ChatImage({ children, uploadImage }: React.PropsWithChildren<Cha
             <video className="webvideo" autoPlay muted playsInline ref={videoRef} />
             <canvas className="webcanvas" ref={canvasRef} />
           </div>
-          <div className="cambtn" role="button" aria-label="拍照" onClick={onCapture}>
+          <div className="cambtn" role="button" aria-label="Photograph" onClick={onCapture}>
             <div className="cam-btn-circle-large"></div>
             <div className="cam-btn-circle-small"></div>
           </div>
