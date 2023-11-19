@@ -78,7 +78,7 @@ export function UserMenu() {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://github.com/chokiproai/GPT4-API"
+              href="https://github.com/Niansuh/GPT4-API"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
@@ -91,7 +91,7 @@ export function UserMenu() {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fgpt4-api%3Fduplicate%3Dtrue"
+              href="https://huggingface.co/login?next=%2Fspaces%2FNiansuh%2Fgpt4api%3Fduplicate%3Dtrue"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
