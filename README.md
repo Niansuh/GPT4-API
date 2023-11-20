@@ -1,6 +1,6 @@
 ![Bing Chat API](https://user-images.githubusercontent.com/51857187/221339911-75f3e232-1c7b-4877-b3fe-8a1b77c5c744.jpg)
 
-## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fngoctuanai%2Fgpt4-api%3Fduplicate%3Dtrue)
+## [Deployed on Hugging Face](https://huggingface.co/login?next=%2Fspaces%2Fniansuh%2Fgpt4api%3Fduplicate%3Dtrue)
 
 ## Post Deploy
 
@@ -18,4 +18,4 @@ Contributions are always welcome!
 
 ## License and Leagal
 
-This project is licensed under [MIT](https://github.com/chokiproai/GPT4-API/blob/master/LICENSE). This project is made as a proof of concept and doesnot meant to harm microsoft.
+This project is licensed under [MIT](https://github.com/Niansuh/GPT4-API/blob/master/LICENSE). This project is made as a proof of concept and doesnot meant to harm microsoft.
