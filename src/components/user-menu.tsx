@@ -19,13 +19,18 @@ import { SVG } from './ui/svg'
 export function UserMenu() {
   const [host, setHost] = useState('')
   const { isCopied, copyToClipboard } = useCopyToClipboard({ timeout: 2000 })
+  const [installPrompt, setInstallPrompt] = useState<Event & { prompt: () => void }>()
   useEffect(() => {
     setHost(location.host)
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault()
+      setInstallPrompt(event as Event & { prompt: () => void })
+    })  
   }, [])
 
   useEffect(() => {
     if (isCopied) {
-      toast.success('复制成功')
+      toast.success('Copy')
     }
   }, [isCopied])
   return (
@@ -91,7 +96,7 @@ export function UserMenu() {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://huggingface.co/login?next=%2Fspaces%2FNiansuh%2Fgpt4api%3Fduplicate%3Dtrue"
+              href="https://huggingface.co/login?next=%2Fspaces%2FNiansuh%2Fgpt4-api%3Fduplicate%3Dtrue"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
@@ -103,7 +108,11 @@ export function UserMenu() {
           <DropdownMenuSeparator />
           <DropdownMenuItem className="flex-col items-start">
             <div className="font-medium">Version {pkg.version}</div>
-          </DropdownMenuItem>
+            </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          {installPrompt && <DropdownMenuItem className="flex-col items-start">
+            <div className="font-medium" onClick={() => installPrompt.prompt?.()}>Install Bing</div>
+          </DropdownMenuItem>}
           <DropdownMenuSeparator />
           <DropdownMenuItem className="flex-col items-start">
             <div className="font-medium">API</div>
