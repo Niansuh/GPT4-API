@@ -118,7 +118,7 @@ export function ChatPanel({
             <div className="button-compose-wrapper">
               <button className="body-2 button-compose" type="button" aria-label="Get API" onClick={resetConversation}>
                 <div className="button-compose-content">
-                  <SVG className="pl-2" alt="new topic" src={NewTopic} width={40} fill="currentColor" />
+                  <SVG className="pl-2" alt="Get API" src={NewTopic} width={40} fill="currentColor" />
                   <div className="button-compose-text">Get API</div>
                 </div>
               </button>
@@ -140,8 +140,8 @@ export function ChatPanel({
                 onKeyDown={onSubmit}
                 rows={1}
                 value={input}
-                onChange={e => setInput(e.target.value.slice(0, 1))}
-                placeholder={voiceListening ? '持续对话中...对话完成说“发送”即可' : 'ㅤ'}
+                onChange={e => setInput(e.target.value.slice(0, 8000))}
+                placeholder={voiceListening ? 'The conversation is ongoing... Just say "Send" when the conversation is complete' : 'Shift + Enter to change the line, enter/select the prompt word'}
                 spellCheck={false}
                 className="message-input min-h-[24px] w-full text-base resize-none bg-transparent focus-within:outline-none"
               />
@@ -155,7 +155,7 @@ export function ChatPanel({
                 </ChatImage>
               </div>
               <div className="flex gap-2 items-center">
-                <div className="letter-counter"><span>{input.length}</span>/1</div>
+                <div className="letter-counter"><span>{input.length}</span>/8000</div>
                 <button type="submit" className="action-button" onClick={onSend}>
                   <SVG alt="send" src={input.length ? SendFillIcon : SendIcon} width={18} height={20} />
                 </button>
