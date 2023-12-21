@@ -41,7 +41,7 @@ export function UserMenu() {
             <div className="flex items-center justify-center text-xs font-medium uppercase rounded-full select-none h-7 w-7 shrink-0 bg-muted/50 text-muted-foreground">
               <SVG alt="settings" src={SettingIcon} width={20} />
             </div>
-            <span className="ml-2"></span>
+            <span className="ml-2">Settings</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent sideOffset={8} align="start" className="w-[180px] bg-background">
@@ -96,7 +96,7 @@ export function UserMenu() {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://huggingface.co/login?next=%2Fspaces%2FNiansuh%2Fgpt4-api%3Fduplicate%3Dtrue"
+              href="https://huggingface.co/login?next=%2Fspaces%2Fniansuh%2Fgpt4api%3Fduplicate%3Dtrue"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
@@ -110,14 +110,10 @@ export function UserMenu() {
             <div className="font-medium">Version {pkg.version}</div>
             </DropdownMenuItem>
           <DropdownMenuSeparator />
-          {installPrompt && <DropdownMenuItem className="flex-col items-start">
-            <div className="font-medium" onClick={() => installPrompt.prompt?.()}>Install Bing</div>
-          </DropdownMenuItem>}
-          <DropdownMenuSeparator />
           <DropdownMenuItem className="flex-col items-start">
             <div className="font-medium">API</div>
             <div onClick={() => copyToClipboard(host)} className="flex gap-1 text-xs text-zinc-500 cursor-pointer">
-              {host} <IconCopy />
+            https://{host} <IconCopy />
             </div>
           </DropdownMenuItem>
         </DropdownMenuContent>
