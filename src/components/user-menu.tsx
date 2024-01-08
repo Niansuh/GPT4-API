@@ -113,7 +113,7 @@ export function UserMenu() {
           <DropdownMenuItem className="flex-col items-start">
             <div className="font-medium">API Endpoint URL</div>
             <div onClick={() => copyToClipboard(host)} className="flex gap-1 text-xs text-zinc-500 cursor-pointer">
-            https://{host} <IconCopy />
+            https://{host}/v1/chat/completions <IconCopy />
             </div>
           </DropdownMenuItem>
         </DropdownMenuContent>
